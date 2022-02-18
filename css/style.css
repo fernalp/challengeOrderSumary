@@ -1,0 +1,167 @@
+:root {
+  /* colores primarios */
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  /* colores neutros */
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: url(../images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--paleBlue);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.containerPayCard {
+  display: flex;
+  width: 1440px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.payCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.heroPayCard {
+  border-radius: 20px;
+}
+.imgHeroPayCard {
+  border-radius: 20px 20px 0 0;
+}
+.contentPayCard {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.titlePayCard {
+  margin-top: 2rem;
+}
+#titlePayCard {
+  color: var(--darkBlue);
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+#contentTitlePayCard {
+  color: var(--desaturatedBlue);
+  width: 75%;
+  margin: 2rem auto;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+.contentPlanPayCard {
+  background-color: var(--veryPaleBlue);
+  width: 80%;
+  margin: 2rem auto 1rem;
+  padding: 0.8rem 0;
+  border-radius: 10px;
+}
+.pricePlanPayCard {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.contentPricePlan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconPricePlan {
+  display: inline-block;
+  margin-right: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+#iconPricePlan {
+  background-size: cover;
+}
+.pricePlan {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+.typePlan {
+  font-size: 0.8rem;
+  color: var(--darkBlue);
+  font-weight: bold;
+}
+#pricePlan {
+  font-size: 0.7rem;
+  color: var(--desaturatedBlue);
+}
+.changePlanPayCard {
+  display: inline-block;
+  font-size: 0.7rem;
+  align-items: center;
+}
+#changePlan:hover {
+  text-decoration: none;
+  color: rgb(74, 123, 231);
+  transition: 0.2s ease-in;
+}
+button {
+  cursor: pointer;
+}
+.btnPayCard {
+  margin: 1rem auto;
+  width: 90%;
+}
+.btnPaymentCard {
+  display: block;
+  border: none;
+  width: 80%;
+  margin: 0 auto 1rem;
+  background-color: var(--brightBlue);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(116, 148, 218);
+}
+.btnPaymentCard:hover {
+  background-color: rgb(74, 123, 231);
+  transition: 0.3s ease-in;
+}
+.btnCancelOrderCard {
+  display: block;
+  border: none;
+  background-color: #fff;
+  margin: 2rem auto;
+  color: var(--desaturatedBlue);
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.btnCancelOrderCard:hover {
+  color: var(--darkBlue);
+  transition: 0.3s ease-in-out;
+}
